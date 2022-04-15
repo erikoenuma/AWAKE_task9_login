@@ -7,7 +7,6 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
     <nav>
       <% if logged_in? %>
         <ul>
@@ -18,8 +17,8 @@
         </ul>
       <% else %>
         <ul>
-          <li><%= link_to "アカウント登録", new_user_path, :id => "sign-up" %></li>
-          <li><%= link_to "ログイン", new_session_path, :id => "sign-in" %></li>
+          <li><%= link_to "アカウント登録", new_user_path, :id => "sign-in" %></li>
+          <li><%= link_to "ログイン", new_session_path, :id => "sign-up" %></li>
         </ul>
       <% end %>
     </nav>
