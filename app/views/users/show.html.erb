@@ -3,4 +3,4 @@
 <p>メールアドレス: <%= @user.email %></p>
 
 <%= link_to t('common.edit'), edit_user_path(current_user.id), :id => "edit-user" %> |
-<%= link_to t('common.destroy'), new_session_path, method: :delete, data: { confirm: t('common.confirm_destroy') }, :id => "destroy-user" %>
+<%= link_to t('common.destroy'), user_path(current_user.id), method: :delete, data: { confirm: t('common.confirm_destroy') }, :id => "destroy-user" %>
